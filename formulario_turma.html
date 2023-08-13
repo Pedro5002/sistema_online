@@ -4,40 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario_turma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet">
+
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>    
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Nossos Cursos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="turmas.html">Nossas Turmas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="alunos.html">Nossos Alunos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="professores.html">Nossos Professores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <form>
-        <h1>Cursos</h1>
-        <select>
-            <option>Windows</option>
-            <option>Excel</option>
-            <option>Power BI</option>
-        </select>
+        <div class="mb-3">
+            <label class="form-label" for="cursos">Cursos:</label>
+            <select id="cursos" name="cursos" class="form-select">
+                <option></option>
+                <option value="1">Windows</option>
+                <option value="2">Excel</option>
+                <option value="3">Power BI</option>
+            </select>
+        </div>
 
-        <table border=1>
+        <table class="table table-striped">
             <tr>
-                <td>Data de início:</td>
-                <td>20/04/2023</td>
-
-                <td>Data de término:</td>
-                <td>15/08/2023</td>
+                <td>Data de início: 20/04/2023</td>
+                <td>Data de término: 15/10/2023</td>
             </tr>
         </table>
-
-        <button type="submit">Ok</button>
-        <button type="reset">Limpar</button>
-
+        <div>
+        <input type="submit" value="Ok" class="btn btn-primary">
+        <input type="reset" value="Limpar" class="btn btn-secondary">
+        <a href="turmas.html"><button type="button" class="btn btn-secondary"> Voltar </button></a>
+        </div>
     </form>
-
-   
-
-    
-
-    <a href="turmas.html"><button type="button"> Voltar </button></a>
-
-    <a href="cursos.html">Nossos Cursos</a>
-    <a href="turmas.html">Nossas Turmas</a>
-    <a href="alunos.html">Nossos Alunos</a>
-    <a href="professores.html">Nossos Professores</a>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </html>
